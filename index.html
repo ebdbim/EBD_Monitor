@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
+<!-- saved from url=(0058)file:///C:/Users/Agustin/Downloads/EBD_Monitor_v2_6_2.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EBD Road Project — Construction Monitor v2.6</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
@@ -129,7 +129,7 @@ canvas{max-height:260px;}
   <div class="login-card">
     <div class="login-logo">
       <h1>🛣️ EBD ROAD PROJECT</h1>
-      <p>Good Success – Timehri | E&amp;A Consultants / Sheladia</p>
+      <p>Good Success – Timehri | Sheladia</p>
       <p style="margin-top:6px;font-size:11px;color:var(--text3)">Construction Monitor v2.6 · WR01–WR16 · 2026</p>
     </div>
     <label class="login-label">User</label>
@@ -139,8 +139,7 @@ canvas{max-height:260px;}
       <option value="guest">Inspector / Guest (Read Only)</option>
     </select>
     <label class="login-label">PIN</label>
-    <input class="login-pin-input" id="pin-input" type="password" maxlength="4"
-      placeholder="4-digit PIN" onkeydown="if(event.key==='Enter')doLogin()">
+    <input class="login-pin-input" id="pin-input" type="password" maxlength="4" placeholder="4-digit PIN" onkeydown="if(event.key===&#39;Enter&#39;)doLogin()">
     <button class="login-btn" onclick="doLogin()">SIGN IN</button>
     <div class="login-error" id="login-error"></div>
   </div>
@@ -151,7 +150,7 @@ canvas{max-height:260px;}
   <div class="modal-box">
     <div class="modal-header">
       <div class="modal-title">📖 Technical Glossary — EBD Road Project</div>
-      <button class="modal-close" onclick="closeModal('glossary-modal')">✕</button>
+      <button class="modal-close" onclick="closeModal(&#39;glossary-modal&#39;)">✕</button>
     </div>
     <div id="glossary-content"></div>
   </div>
@@ -162,7 +161,7 @@ canvas{max-height:260px;}
   <div class="modal-box period-modal">
     <div class="modal-header">
       <div class="modal-title">📅 Edit Report Period</div>
-      <button class="modal-close" onclick="closeModal('period-modal')">✕</button>
+      <button class="modal-close" onclick="closeModal(&#39;period-modal&#39;)">✕</button>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px;">
       <div class="form-group"><label class="form-label">From</label><input class="form-input" id="period-from" type="text" placeholder="e.g. Jan 2, 2026"></div>
@@ -178,7 +177,7 @@ canvas{max-height:260px;}
     <div class="topbar-title">📐 EBD Road Project — Construction Monitor</div>
     <div class="topbar-period">
       Period: <span id="tb-period-text">Jan 2 – Apr 23, 2026</span>
-      <button class="period-edit admin-only" onclick="openModal('period-modal')" title="Edit period">✏️</button>
+      <button class="period-edit admin-only" onclick="openModal(&#39;period-modal&#39;)" title="Edit period">✏️</button>
     </div>
     <button class="glossary-btn" onclick="openGlossary()">📖 Glossary</button>
     <div class="user-badge"><div class="user-dot"></div><span id="tb-user">—</span><span id="tb-role" style="color:var(--text3)"></span></div>
@@ -187,16 +186,16 @@ canvas{max-height:260px;}
   <div class="main-layout">
     <div class="sidebar">
       <div class="nav-label">Navigation</div>
-      <div class="nav-item active" onclick="showPage('dashboard')"><span class="nav-icon">📊</span><span>Dashboard</span></div>
-      <div class="nav-item" onclick="showPage('weekly')"><span class="nav-icon">📈</span><span>Weekly Trend</span></div>
-      <div class="nav-item" onclick="showPage('budget')"><span class="nav-icon">💰</span><span>Budget</span></div>
-      <div class="nav-item" onclick="showPage('progress')"><span class="nav-icon">🛣️</span><span>Progress</span></div>
-      <div class="nav-item" onclick="showPage('sequence')"><span class="nav-icon">📏</span><span>Chainage Map</span></div>
-      <div class="nav-item" onclick="showPage('alerts')"><span class="nav-icon">⚠️</span><span>Alerts</span></div>
-      <div class="nav-item" onclick="showPage('records')"><span class="nav-icon">📋</span><span>Records</span></div>
-      <div class="nav-item" onclick="showPage('ipc')"><span class="nav-icon">💳</span><span>IPC Analysis</span></div>
-      <div class="nav-item admin-only" onclick="showPage('add')"><span class="nav-icon">➕</span><span>Add Data</span></div>
-      <div class="nav-item admin-only" onclick="showPage('upload')"><span class="nav-icon">📂</span><span>Upload WR</span></div>
+      <div class="nav-item active" onclick="showPage(&#39;dashboard&#39;)"><span class="nav-icon">📊</span><span>Dashboard</span></div>
+      <div class="nav-item" onclick="showPage(&#39;weekly&#39;)"><span class="nav-icon">📈</span><span>Weekly Trend</span></div>
+      <div class="nav-item" onclick="showPage(&#39;budget&#39;)"><span class="nav-icon">💰</span><span>Budget</span></div>
+      <div class="nav-item" onclick="showPage(&#39;progress&#39;)"><span class="nav-icon">🛣️</span><span>Progress</span></div>
+      <div class="nav-item" onclick="showPage(&#39;sequence&#39;)"><span class="nav-icon">📏</span><span>Chainage Map</span></div>
+      <div class="nav-item" onclick="showPage(&#39;alerts&#39;)"><span class="nav-icon">⚠️</span><span>Alerts</span></div>
+      <div class="nav-item" onclick="showPage(&#39;records&#39;)"><span class="nav-icon">📋</span><span>Records</span></div>
+      <div class="nav-item" onclick="showPage(&#39;ipc&#39;)"><span class="nav-icon">💳</span><span>IPC Analysis</span></div>
+      <div class="nav-item admin-only" onclick="showPage(&#39;add&#39;)"><span class="nav-icon">➕</span><span>Add Data</span></div>
+      <div class="nav-item admin-only" onclick="showPage(&#39;upload&#39;)"><span class="nav-icon">📂</span><span>Upload WR</span></div>
     </div>
     <div class="content" id="content"></div>
   </div>
@@ -1471,5 +1470,5 @@ function pageIPC(){
 </div>`;
 }
 </script>
-</body>
-</html>
+
+</body></html>
